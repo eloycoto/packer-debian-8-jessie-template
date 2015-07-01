@@ -15,13 +15,13 @@ but with the following changes:
 To build this project you only need to do the following:
 
 ```
-packer buuld debian-8-jessie.json
+packer build debian-8-jessie.json
 ```
 
 ### Prerequisites
 
 - [Packer](http://www.packer.io/downloads.html) >= 0.8
-- [Vmware fushion](http://www.vmware.com/products/fusion/),
+- [Vmware fusion](http://www.vmware.com/products/fusion/),
   [workstation](http://www.vmware.com/products/workstation) or
   [player](http://www.vmware.com/products/player/)
 
