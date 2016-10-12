@@ -5,8 +5,8 @@
     "disk_size": "10140",
     "ssh_port": "22",
     "ssh_wait_timeout": "10000s",
-    "iso_url": "http://cdimage.debian.org/debian-cd/8.1.0/amd64/iso-cd/debian-8.1.0-amd64-netinst.iso",
-    "iso_md5": "1a311f9afb68d6365211b13b4342c40b",
+    "iso_url": "http://cdimage.debian.org/debian-cd/8.6.0/amd64/iso-cd/debian-8.6.0-amd64-netinst.iso",
+    "iso_md5": "e9f61bf327db6d8f7cee05a99f2353cc",
     "vm_name": "debian-801-jessie"
   },
   "builders": [
@@ -35,6 +35,7 @@
       "iso_checksum": "{{user `iso_md5`}}",
       "iso_checksum_type": "md5",
       "iso_url": "{{user `iso_url`}}",
+      "shutdown_command": "echo 'vagrant'|sudo -S /sbin/halt -h -p",
       "ssh_password": "vagrant",
       "ssh_port": "{{user `ssh_port`}}",
       "ssh_username": "vagrant",
@@ -66,4 +67,3 @@
     }
   ]
 }
-
